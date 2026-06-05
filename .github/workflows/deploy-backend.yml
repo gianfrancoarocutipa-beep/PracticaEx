@@ -1,0 +1,37 @@
+name: Deploy Backend
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'backend/**'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Build backend
+        run: dotnet build backend/src/LaundryApi/LaundryApi.csproj --configuration Release
+
+      - name: Run backend tests
+        run: dotnet test backend/src/LaundryApi.Tests/LaundryApi.Tests.csproj --configuration Release --no-build
+
+      - name: Notify Render deploy hook
+        if: success() && github.event_name == 'push'
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK }}
+        run: |
+          if [ -n "$RENDER_DEPLOY_HOOK" ]; then
+            curl -X POST "$RENDER_DEPLOY_HOOK"
+          else
+            echo "Render deploy hook not configured."
+          fi

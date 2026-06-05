@@ -1,0 +1,31 @@
+name: Run Migrations
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to run migrations for'
+        required: true
+        default: 'dev'
+        type: choice
+        options:
+          - dev
+          - prod
+
+jobs:
+  migrations:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Run LaundryMigrator
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          DOTNET_ENVIRONMENT: ${{ github.event.inputs.environment }}
+        run: dotnet run --project backend/src/LaundryMigrator/LaundryMigrator.csproj --configuration Release

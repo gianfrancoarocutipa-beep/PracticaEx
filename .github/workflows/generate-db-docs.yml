@@ -1,0 +1,27 @@
+name: Generate DB Docs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'backend/src/LaundryMapper/**'
+
+jobs:
+  generate-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run docs generator
+        run: |
+          python3 .github/scripts/generate_db_docs.py
+
+      - name: Commit generated docs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/database-entities.md
+          git diff --cached --quiet || git commit -m 'chore: update database entities docs'
+          git push
