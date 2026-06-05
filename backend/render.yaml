@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: backend
+    env: dotnet
+    plan: free
+    region: oregon
+    branch: main
+    root: backend
+    buildCommand: dotnet build ./src/LaundryApi/LaundryApi.csproj
+    startCommand: dotnet run --project ./src/LaundryApi/LaundryApi.csproj
+    envVars:
+      - key: MONGODB_URI
+        fromDatabase: true
+      - key: PORT
+        fromDatabase: true

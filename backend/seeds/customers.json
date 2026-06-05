@@ -1,0 +1,72 @@
+[
+  {
+    "Id": "648e7d4a2f9b8f1a4d000001",
+    "Name": "Ana Torres",
+    "Phone": "+51981234567",
+    "Email": "ana.torres@example.com",
+    "Addresses": [
+      {
+        "Street": "Calle Jorge Basadre 123",
+        "City": "Tacna",
+        "Region": "Tacna",
+        "Country": "Peru"
+      }
+    ]
+  },
+  {
+    "Id": "648e7d4a2f9b8f1a4d000002",
+    "Name": "Carlos Quispe",
+    "Phone": "+51987654321",
+    "Email": "carlos.quispe@example.com",
+    "Addresses": [
+      {
+        "Street": "Av. Bolognesi 456",
+        "City": "Tacna",
+        "Region": "Tacna",
+        "Country": "Peru"
+      }
+    ]
+  },
+  {
+    "Id": "648e7d4a2f9b8f1a4d000003",
+    "Name": "María Delgado",
+    "Phone": "+51971234567",
+    "Email": "maria.delgado@example.com",
+    "Addresses": [
+      {
+        "Street": "Jr. San Martín 789",
+        "City": "Tacna",
+        "Region": "Tacna",
+        "Country": "Peru"
+      }
+    ]
+  },
+  {
+    "Id": "648e7d4a2f9b8f1a4d000004",
+    "Name": "Luis Paredes",
+    "Phone": "+51970234567",
+    "Email": "luis.paredes@example.com",
+    "Addresses": [
+      {
+        "Street": "Psj. Comercio 101",
+        "City": "Tacna",
+        "Region": "Tacna",
+        "Country": "Peru"
+      }
+    ]
+  },
+  {
+    "Id": "648e7d4a2f9b8f1a4d000005",
+    "Name": "Rosa Ayala",
+    "Phone": "+51976234567",
+    "Email": "rosa.ayala@example.com",
+    "Addresses": [
+      {
+        "Street": "Av. Héroes 202",
+        "City": "Tacna",
+        "Region": "Tacna",
+        "Country": "Peru"
+      }
+    ]
+  }
+]

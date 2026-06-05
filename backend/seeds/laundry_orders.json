@@ -1,0 +1,92 @@
+[
+  {
+    "Id": "648e7e3b2f9b8f1a4d000011",
+    "CustomerId": "648e7d4a2f9b8f1a4d000001",
+    "Items": ["Camisa", "Pantalón"],
+    "PickupSchedule": {"Date": "2026-06-10T09:00:00Z", "TimeSlot": "09:00-11:00", "Address": {"Street": "Calle Jorge Basadre 123", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "DeliverySchedule": {"Date": "2026-06-12T14:00:00Z", "TimeSlot": "14:00-16:00", "Address": {"Street": "Calle Jorge Basadre 123", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "Status": "Registered",
+    "CreatedAt": "2026-06-05T12:00:00Z"
+  },
+  {
+    "Id": "648e7e3b2f9b8f1a4d000012",
+    "CustomerId": "648e7d4a2f9b8f1a4d000002",
+    "Items": ["Vestido", "Blusa"],
+    "PickupSchedule": {"Date": "2026-06-08T10:00:00Z", "TimeSlot": "10:00-12:00", "Address": {"Street": "Av. Bolognesi 456", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "DeliverySchedule": {"Date": "2026-06-10T15:00:00Z", "TimeSlot": "15:00-17:00", "Address": {"Street": "Av. Bolognesi 456", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "Status": "Picked",
+    "CreatedAt": "2026-06-05T08:30:00Z"
+  },
+  {
+    "Id": "648e7e3b2f9b8f1a4d000013",
+    "CustomerId": "648e7d4a2f9b8f1a4d000003",
+    "Items": ["Abrigo", "Suéter"],
+    "PickupSchedule": {"Date": "2026-06-06T13:00:00Z", "TimeSlot": "13:00-15:00", "Address": {"Street": "Jr. San Martín 789", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "DeliverySchedule": {"Date": "2026-06-08T17:00:00Z", "TimeSlot": "17:00-19:00", "Address": {"Street": "Jr. San Martín 789", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "Status": "Processing",
+    "CreatedAt": "2026-06-05T09:15:00Z"
+  },
+  {
+    "Id": "648e7e3b2f9b8f1a4d000014",
+    "CustomerId": "648e7d4a2f9b8f1a4d000004",
+    "Items": ["Traje", "Corbata"],
+    "PickupSchedule": {"Date": "2026-06-07T08:00:00Z", "TimeSlot": "08:00-10:00", "Address": {"Street": "Psj. Comercio 101", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "DeliverySchedule": {"Date": "2026-06-09T11:00:00Z", "TimeSlot": "11:00-13:00", "Address": {"Street": "Psj. Comercio 101", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "Status": "Ready",
+    "CreatedAt": "2026-06-05T10:45:00Z"
+  },
+  {
+    "Id": "648e7e3b2f9b8f1a4d000015",
+    "CustomerId": "648e7d4a2f9b8f1a4d000005",
+    "Items": ["Shorts", "Camiseta"],
+    "PickupSchedule": {"Date": "2026-06-09T14:00:00Z", "TimeSlot": "14:00-16:00", "Address": {"Street": "Av. Héroes 202", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "DeliverySchedule": {"Date": "2026-06-11T16:00:00Z", "TimeSlot": "16:00-18:00", "Address": {"Street": "Av. Héroes 202", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "Status": "Shipped",
+    "CreatedAt": "2026-06-05T07:20:00Z"
+  },
+  {
+    "Id": "648e7e3b2f9b8f1a4d000016",
+    "CustomerId": "648e7d4a2f9b8f1a4d000001",
+    "Items": ["Falda", "Blazer"],
+    "PickupSchedule": {"Date": "2026-06-05T09:30:00Z", "TimeSlot": "09:30-11:30", "Address": {"Street": "Calle Jorge Basadre 123", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "DeliverySchedule": {"Date": "2026-06-07T13:30:00Z", "TimeSlot": "13:30-15:30", "Address": {"Street": "Calle Jorge Basadre 123", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "Status": "Delivered",
+    "CreatedAt": "2026-06-05T05:50:00Z"
+  },
+  {
+    "Id": "648e7e3b2f9b8f1a4d000017",
+    "CustomerId": "648e7d4a2f9b8f1a4d000002",
+    "Items": ["Parka", "Bufanda"],
+    "PickupSchedule": {"Date": "2026-06-04T10:00:00Z", "TimeSlot": "10:00-12:00", "Address": {"Street": "Av. Bolognesi 456", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "DeliverySchedule": {"Date": "2026-06-06T14:00:00Z", "TimeSlot": "14:00-16:00", "Address": {"Street": "Av. Bolognesi 456", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "Status": "Ready",
+    "CreatedAt": "2026-06-04T06:30:00Z"
+  },
+  {
+    "Id": "648e7e3b2f9b8f1a4d000018",
+    "CustomerId": "648e7d4a2f9b8f1a4d000003",
+    "Items": ["Chamarras", "Pantalones"],
+    "PickupSchedule": {"Date": "2026-06-03T11:00:00Z", "TimeSlot": "11:00-13:00", "Address": {"Street": "Jr. San Martín 789", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "DeliverySchedule": {"Date": "2026-06-05T15:00:00Z", "TimeSlot": "15:00-17:00", "Address": {"Street": "Jr. San Martín 789", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "Status": "Processing",
+    "CreatedAt": "2026-06-03T04:10:00Z"
+  },
+  {
+    "Id": "648e7e3b2f9b8f1a4d000019",
+    "CustomerId": "648e7d4a2f9b8f1a4d000004",
+    "Items": ["Jeans", "Camisa"],
+    "PickupSchedule": {"Date": "2026-06-02T12:00:00Z", "TimeSlot": "12:00-14:00", "Address": {"Street": "Psj. Comercio 101", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "DeliverySchedule": {"Date": "2026-06-04T16:00:00Z", "TimeSlot": "16:00-18:00", "Address": {"Street": "Psj. Comercio 101", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "Status": "Shipped",
+    "CreatedAt": "2026-06-02T03:05:00Z"
+  },
+  {
+    "Id": "648e7e3b2f9b8f1a4d00001a",
+    "CustomerId": "648e7d4a2f9b8f1a4d000005",
+    "Items": ["Falda", "Top"],
+    "PickupSchedule": {"Date": "2026-06-01T13:00:00Z", "TimeSlot": "13:00-15:00", "Address": {"Street": "Av. Héroes 202", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "DeliverySchedule": {"Date": "2026-06-03T17:00:00Z", "TimeSlot": "17:00-19:00", "Address": {"Street": "Av. Héroes 202", "City": "Tacna", "Region": "Tacna", "Country": "Peru"}},
+    "Status": "Delivered",
+    "CreatedAt": "2026-06-01T02:55:00Z"
+  }
+]
